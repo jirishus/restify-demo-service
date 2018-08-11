@@ -1,0 +1,21 @@
+{
+  "name": "restify-demo-service",
+  "version": "1.0.0",
+  "description": "A restify service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jirishus/restify-demo-service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jirishus/restify-demo-service/issues"
+  },
+  "homepage": "https://github.com/jirishus/restify-demo-service#readme"
+}
