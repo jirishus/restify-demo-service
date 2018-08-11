@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/jirishus/restify-demo-service/issues"
   },
-  "homepage": "https://github.com/jirishus/restify-demo-service#readme"
+  "homepage": "https://github.com/jirishus/restify-demo-service#readme",
+  "dependencies": {
+    "restify": "7.2.1"
+  }
 }
