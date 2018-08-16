@@ -1,7 +1,10 @@
 /**
  * Load Config
  */
-const PORT = 5000;
+let config = require('./conf/config');
+
+const PORT = config.port;
+const HOST = config.host;
 
 /**
  * Module Dependencies
@@ -28,6 +31,5 @@ server.get('/', function (req, res, next) {
  * Start Server
  */
 server.listen(PORT, function() {
-  console.log(server.name);
-  console.log(`server listening on port ${ PORT }`)
+  console.log(`${ server.name } listening on ${ HOST }:${ PORT }`)
 });
