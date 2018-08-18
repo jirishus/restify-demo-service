@@ -1,7 +1,8 @@
 /**
  * Load Config
  */
-let config = require('./conf/config');
+const config = require('./conf/config');
+const routes = require('./routes'); 
 
 const PORT = config.port;
 const HOST = config.host;
@@ -26,6 +27,8 @@ server.get('/', function (req, res, next) {
  res.send('ok');
  next();
 });
+
+routes(server);
 
 /**
  * Start Server
