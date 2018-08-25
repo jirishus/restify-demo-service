@@ -4,7 +4,7 @@
 const fs = require('fs');
 
 module.exports = function (server) {
-	fs.readdirSync('./routes').forEach((file) => {
+	fs.readdirSync('./app/routes').forEach((file) => {
 		if (file.substr(-3, 3) === '.js' && file !== 'index.js') {
 			require(`./${ file.replace('.js', '') }`)(server);
 		}

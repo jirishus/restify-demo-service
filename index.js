@@ -1,8 +1,8 @@
 /**
  * Load Config
  */
-const config = require('./conf/config');
-const routes = require('./routes'); 
+const config = require('./app/conf/config');
+const routes = require('./app/routes'); 
 
 const PORT = config.port;
 const HOST = config.host;
