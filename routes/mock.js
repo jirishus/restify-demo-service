@@ -4,13 +4,49 @@
  *  this will be loaded from its own file eventually
  */
 function mockController(req, res, next) {
- res.send({ info: 'Welcome to the Mock Route' });
+ // res.send({ info: 'Welcome to the Mock Route' });
+
+/**
+ * Example multi-step process
+ * This could be a membership creation, a form submission, or some sort of validation process
+ */
+
+startMainProcess()
+ .then((mainResult) => {
+	return createNewUser();
+ })
+ .then((userResult) => {
+	return registerUser();
+ })
+ .then((registeredUser) => {
+	res.send(registeredUser);
+ });
+
+
  /**
   * Proceed to next execution point
   * next needs to be explicitly called
   */
  next();
 };
+
+function startMainProcess() {
+	return new Promise((resolve) => {
+		resolve('main process start');
+	});
+}
+
+function createNewUser() {
+	return new Promise((resolve) => {
+		resolve('new user object');
+	});
+}
+
+function registerUser() {
+	return new Promise((resolve) => {
+		resolve('new user registered');
+	});
+}
 
 function mockIdController(req, res, next) { 
  if (!req.params.mockid) {
