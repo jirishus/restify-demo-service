@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "watch": "nodemon index.js",
-    "test": "mocha test"
+    "test": "mocha app/test"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/jirishus/restify-demo-service#readme",
   "dependencies": {
     "restify": "7.2.1"
+  },
+  "devDependencies": {
+    "supertest": "3.1.0"
   }
 }

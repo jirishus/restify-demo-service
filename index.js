@@ -36,3 +36,5 @@ routes(server);
 server.listen(PORT, function() {
   console.log(`${ server.name } listening on ${ HOST }:${ PORT }`)
 });
+
+module.exports = server;
