@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jirishus/restify-demo-service#readme",
   "dependencies": {
+    "newrelic": "4.9.0",
     "restify": "7.2.1"
   },
   "devDependencies": {
