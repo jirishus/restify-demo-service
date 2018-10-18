@@ -7,6 +7,7 @@ const routes = require('./app/routes');
 const PORT = config.port;
 const HOST = config.host;
 
+const newrelic = require('newrelic');
 /**
  * Module Dependencies
  */
