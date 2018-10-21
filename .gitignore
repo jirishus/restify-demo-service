@@ -183,5 +183,6 @@ fabric.properties
 
 newrelic.js
 gulpfile.js
+config.json
 
 # End of https://www.gitignore.io/api/node,webstorm,sublimetext
