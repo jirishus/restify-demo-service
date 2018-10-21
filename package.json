@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "watch": "nodemon index.js",
-    "test": "mocha app/test"
+    "test": "mocha app/test",
+    "encrypt": "nodecipher encrypt gulpfile.js gulpfile.js.aes128",
+    "decrypt": "nodecipher decrypt gulpfile.js.aes128 gulpfile.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "restify": "7.2.1"
   },
   "devDependencies": {
+    "gulp": "3.9.1",
     "supertest": "3.1.0"
   }
 }
