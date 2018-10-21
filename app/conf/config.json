@@ -1,4 +1,6 @@
 {
  "host": "$HOST",
- "port": "$PORT"
+ "port": "$PORT",
+ "env": "$ENV",
+ "apikey": "$API_KEY"
 }

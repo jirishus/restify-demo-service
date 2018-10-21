@@ -9,7 +9,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['restify-demo-service'],
+  app_name: ['$NEWRELIC_APP_NAME'],
   /**
    * Your New Relic license key.
    */
