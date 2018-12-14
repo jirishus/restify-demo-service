@@ -181,5 +181,8 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
+newrelic.js
+gulpfile.js
+config.json
 
 # End of https://www.gitignore.io/api/node,webstorm,sublimetext

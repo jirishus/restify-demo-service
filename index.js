@@ -1,12 +1,13 @@
 /**
  * Load Config
  */
-const config = require('./app/conf/config');
+const config = require('./config');
 const routes = require('./app/routes'); 
 
 const PORT = config.port;
 const HOST = config.host;
 
+const newrelic = require('newrelic');
 /**
  * Module Dependencies
  */
