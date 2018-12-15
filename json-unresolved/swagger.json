@@ -1,7 +1,7 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "description" : "api description",
+    "description" : "api description that syncs back",
     "version" : "1.0.0",
     "title" : "Simple Inventory API",
     "contact" : {
