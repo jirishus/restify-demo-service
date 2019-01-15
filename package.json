@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "watch": "nodemon index.js",
-    "test": "mocha app/test",
+    "test": "mocha app/tests/**/*.js",
     "encrypt": "nodecipher encrypt gulpfile.js gulpfile.js.aes128",
     "decrypt": "nodecipher decrypt gulpfile.js.aes128 gulpfile.js"
   },
@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/jirishus/restify-demo-service#readme",
   "dependencies": {
+    "axios": "0.18.0",
     "newrelic": "4.9.0",
+    "nock": "10.0.6",
     "restify": "7.2.1"
   },
   "devDependencies": {
