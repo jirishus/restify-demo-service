@@ -22,6 +22,7 @@
   "homepage": "https://github.com/jirishus/restify-demo-service#readme",
   "dependencies": {
     "axios": "0.18.0",
+    "chai": "4.2.0",
     "newrelic": "4.9.0",
     "nock": "10.0.6",
     "restify": "7.2.1"
