@@ -14,7 +14,6 @@ describe('Main Canary Test Suite', () => {
 	it('should return a 200', (done) => {
 		jokeSpot.fetchJoke()
 			.then((payload) => {
-				console.log('CHECK THIS',payload);
 				expect(payload.msg.punchline).to.equal('something funny');
 				done();
 			})
@@ -22,10 +21,5 @@ describe('Main Canary Test Suite', () => {
 				console.log(new Error(err));
 			});
 	});
-
-	it('should do something amazing', (done) => {
-		done();
-	});
-
 });
 
