@@ -9,7 +9,6 @@ const JOKE_SPOT_URL = 'https://official-joke-api.appspot.com/random_joke';
  */
 function fetchJoke() {
 	return new Promise((resolve, reject) => {
-		console.log('real fetch joke called');
 		axios.get(JOKE_SPOT_URL)
 		 .then((payload) => {
 			const result = {
