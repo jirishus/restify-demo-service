@@ -28,7 +28,7 @@
     "restify": "7.2.1"
   },
   "devDependencies": {
-    "gulp": "3.9.1",
+    "gulp": "4.0.0",
     "gulp-replace": "1.0.0",
     "supertest": "3.1.0"
   }
