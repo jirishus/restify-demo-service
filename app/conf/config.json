@@ -2,5 +2,12 @@
  "host": "$HOST",
  "port": "$PORT",
  "env": "$ENV",
- "apikey": "$API_KEY"
+ "apikey": "$APIKEY",
+ "mongo": {
+	"host": "$MONGOHOST",
+	"collection": "$MONGOCOLLECTION"
+ },
+ "google": {
+	 "maps_api_key": "$MAPS_API_KEY"
+ }
 }

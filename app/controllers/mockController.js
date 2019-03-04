@@ -1,3 +1,5 @@
+const userModel = require('../models/user');
+
 /**
  *  I am beginning to break out the prior anonymous functions
  *  for named function definitions in the form of route-handlers
@@ -10,17 +12,50 @@ function mockController(req, res, next) {
 	* Example multi-step process
 	* This could be a membership creation, a form submission, or some sort of validation process
 	*/
+userModel.aggregate([
+	{ $match: {} }
+])
+.then((response) => {
+	res.send(response);
+	next();
+})
+.catch((err) => {
+	res.send(err);
+	next();
+});
+
+// userModel.find()
+// 		.then((response) => {
+// 			res.send(response);
+// 			next();
+// 		})
+// 		.catch((err) => {
+// 			res.send(err);
+// 			next();
+// 		});
+
+	// const newUser = new userModel({ name: 'Bob Ross' });
+
+	// newUser.save()
+	// 	.then((response) => {
+	// 		res.send(response);
+	// 		next();
+	// 	})
+	// 	.catch((err) => {
+	// 		res.send(err);
+	// 		next();
+	// 	});
  
- startMainProcess()
-	.then((mainResult) => {
-	 return createNewUser();
-	})
-	.then((userResult) => {
-	 return registerUser();
-	})
-	.then((registeredUser) => {
-	 res.send(registeredUser);
-	});
+//  startMainProcess()
+// 	.then((mainResult) => {
+// 	 return createNewUser();
+// 	})
+// 	.then((userResult) => {
+// 	 return registerUser();
+// 	})
+// 	.then((registeredUser) => {
+// 	 res.send(registeredUser);
+// 	});
  
  
 	/**
